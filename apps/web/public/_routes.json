@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/_next/*",
+    "/api/*",
+    "/static/*",
+    "/images/*",
+    "/fonts/*",
+    "/favicon.ico",
+    "/sitemap*.xml",
+    "/robots.txt",
+    "/*.js",
+    "/*.css",
+    "/*.json"
+  ],
+  "cache": {
+    "version": 1,
+    "include": ["/images/*", "/fonts/*", "/*.css", "/*.js", "/_next/static/*"],
+    "browserTTL": {
+      "minutes": 60,
+      "matching": "/*\\.(jpg|jpeg|gif|png|ico|svg|css|js|woff2)$"
+    },
+    "edgeTTL": {
+      "minutes": 720,
+      "matching": "/images/*"
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/_next/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

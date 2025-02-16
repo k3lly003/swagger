@@ -1,0 +1,316 @@
+{
+  "site": {
+    "name": "GanzAfrica",
+    "description": "Empowering youth through sustainable land management, agriculture, and environmental initiatives in Rwanda."
+  },
+  "navigation": {
+    "about": "About",
+    "what_we_do": "What We Do",
+    "programs": "Programs",
+    "projects": "Projects",
+    "stay_updated": "Stay Updated",
+    "contact": "Contact"
+  },
+
+  "testimonials": {
+    "heading_first": "Our",
+    "heading_second": "Testimonials",
+    "roles": {
+      "fellow": "Fellow",
+      "partner": "Partner",
+      "mentor": "Mentor",
+      "alumni": "Alumni",
+      "community_member": "Community Member"
+    },
+    "comments": {
+      "comment1": "My experience with GanzAfrica has been transformative. The training and mentorship helped me develop crucial skills in agriculture and land management that I now apply daily in my work.",
+      "comment2": "Working with GanzAfrica has significantly improved our organizational capacity. Their fellows bring fresh perspectives and data-driven approaches to our agricultural initiatives.",
+      "comment3": "As a mentor with GanzAfrica, I've witnessed the incredible growth of young professionals. Their dedication to sustainable food systems is inspiring and gives me hope for Africa's future.",
+      "comment4": "The GanzAfrica fellowship provided me with both theoretical knowledge and practical experience. I now lead climate adaptation projects that directly impact my community.",
+      "comment5": "GanzAfrica fellows bring innovative thinking and technical expertise to our projects. Their understanding of local contexts combined with global best practices delivers real results."
+    }
+  },
+  "news": {
+    "heading_first": "Latest",
+    "heading_second": "News & Updates",
+    "see_all": "See New Updates",
+    "tags": {
+      "fellowship": "Fellowship",
+      "policy": "Policy",
+      "event": "Event",
+      "announcement": "Announcement",
+      "publication": "Publication"
+    },
+    "items": {
+      "news1": {
+        "title": "Youth Advancing CAADP Post-Malabo",
+        "excerpt": "Young leaders making strides in implementing the Comprehensive Africa Agriculture Development Programme."
+      },
+      "news2": {
+        "title": "Our fellows reflecting on their work in retreat",
+        "excerpt": "GanzAfrica fellows gathered to reflect on their impact and strategize for future initiatives."
+      },
+      "news3": {
+        "title": "Youth Advancing CAADP Post-Malabo",
+        "excerpt": "How young agricultural leaders are driving policy implementation across the continent."
+      }
+    }
+  },
+  "about": {
+    "title": "About GanzAfrica",
+    "our_story": "Our Story",
+    "our_people": "Our People",
+    "who_we_are": "Who we Are",
+    "partners": "Partners",
+    "policies": "Policies",
+    "description": "GanzAfrica is dedicated to empowering youth through sustainable land management, agriculture, and environmental initiatives in Rwanda.",
+
+    "origin_title": "Origin and Inspiration (Before 2022)",
+    "origin_text": "Nearly three years ago, I established GanzAfrica with a clear mission: to build local human capital to champion the use of data and evidence to support public services and development agencies in decision-making, as they deliver essential programs to enhance people's standard of living, health, climate and environment, all critical food systems sectors. This initiative stemmed from many years of learning and experience gained working closely with public institutions and policy implementing partners. Over time, I noticed significant gaps in local capacity, efficiency and innovation potential, which resulted in slow progress and below-par developmental outcomes—especially within food systems sectors. Although GanzAfrica was officially founded in 2022, its roots go back much further. The ideas germinated from years of observing how well-meaning policies often fell short in implementation, primarily due to a lack of capacity. This has hampered progress across many African countries, where even good solutions have also been ineffective due to their application without contextual consideration.",
+
+    "vision_title": "The Vision and Approach",
+    "vision_text": "I realized that bridging these gaps would require a unique approach, one that involved equipping young, talented graduates with the tools to support impactful initiatives. These professionals would need to be embedded within very institutions that needed transformation. The GanzAfrica program embodies this vision. It identifies promising young professionals with the right attitudes and equips them with the skills to support mandated institutions, make evidence-based decisions, adopt systems thinking, and drive sustainable change. Fellows are strategically placed as change agents in partner public institutions, where they gain invaluable real-world experience while contributing fresh ideas. The interplay between personal skills, theoretical training and practical application is at the heart of what makes GanzAfrica unique and impactful.",
+
+    "progress_title": "Progress and Impact (2022-2024)",
+    "progress_text": "In just over two years since our first cohort of fellows joined public institutions, we have witnessed tangible results. Not only have our fellows brought fresh perspectives and innovative approaches to their roles, but they also facilitated operational efficiencies that are supporting institutional decision-makers to yield better outcomes within these institutions. Their contributions range from analyzing data sets, providing policy insights, and fostering a culture of accountability. Importantly, their work is starting to have a lasting impact on how institutions in the broader East African food systems, ensuring they are more sustainable, inclusive, and responsive to the needs of the population. Yet all this could not be achieved without the collaborative efforts of dedicated partners in these institutions, whose support has played a crucial role in making GA a reality. Their commitment and belief in our mission have been instrumental in driving the success of GanzAfrica.",
+
+    "success_title": "Fellow Success Stories",
+    "success_text": "We are equally proud of the individual journeys of our fellows. Many have leveraged their experience with GanzAfrica to secure meaningful and impactful roles within the public sector and beyond. Reinforcing our core belief in the power of investing in young professionals and equipping them with the skills to lead. At GanzAfrica, we see our fellows not just as participants in a program but as changemakers who will continue to drive transformation long after their time with us.",
+
+    "lessons_title": "Lessons Learned and Adaptation",
+    "lessons_text": "As we reflect on our first two years of implementation, we remain steadfast in our commitment to continuous learning and adaptation. Each challenge and lesson shapes our strategy for the future. For instance, we have learned the importance of tailoring our training to address the specific needs of the institutions we partner with. We have also seen the value of fostering strong relationships with these organizations to ensure that the placement of fellows leads to long-term, systemic change rather than temporary solutions.",
+
+    "future_title": "Future Vision and Expansion",
+    "future_text": "Looking ahead, we are excited about expanding the reach and impact of the GanzAfrica program. Our goal is to continue driving meaningful change, scale our operations, and build a growing network of technically skilled, innovative leaders who are passionate about transforming food systems and addressing other critical societal challenges. The journey has just begun, but we are already witnessing the positive impact of our work across the region. Together with our partners, fellows, and host institutions, we are committed to continued growth, shaping a sustainable future for Africa with innovation, efficiency, and excellence.",
+
+    "team_photo_alt": "GanzAfrica team",
+    "fellows_photo_alt": "GanzAfrica fellows",
+    "lessons_photo_alt": "GanzAfrica lessons",
+    "team_members_alt": "GanzAfrica team members",
+    "hero": {
+      "title_1": "Empowering",
+      "title_2": "Africa's Future",
+      "subtitle": "Through Transformative",
+      "who_we_are": "WHO WE ARE"
+    },
+    "transformative_partner": {
+      "heading_first": "A Transformative",
+      "heading_second": "Partner",
+      "paragraph_1": "Africa is a young, fast-growing continent with almost boundless potential. To take full advantage of the opportunities ahead, African leaders need to address several priorities, including creating impactful jobs for youth and improving agriculture, which employs more Africans than any other sector. GanzAfrica offers an innovative training, mentorship, and work placement program that meets both pressing needs at once—and prepares African youth to take the future in their hands.",
+      "paragraph_2": "GanzAfrica provides holistic career preparation for transformative food systems leaders. Our curriculum integrates best practices around agriculture, the environment, sustainable land management, and land rights to break siloed patterns of thinking and unlock opportunities at the intersections of these fields. We stress data literacy and analytical capabilities to equip youth with the necessary skills to provide the right support to state and non-state organizations to make evidence-based decisions.",
+      "paragraph_3": "Our program also connects fellows to a rich community of mentors and places them in government and non-government sector jobs where they gain both real-world experience and the beginnings of a professional network.",
+      "paragraph_4": "In the end, GanzAfrica connects youth to fulfilling careers that draw on their passion and skills to deliver on the promise of a healthy, prosperous future for the continent."
+    },
+    "aspirations": {
+      "heading_first": "Our",
+      "heading_second": "Aspirations",
+      "mission_label": "Our Mission",
+      "mission_1": "To advance a prosperous and sustainable food systems transformation in Africa through locally driven, system-focused solutions",
+      "mission_2": "To strengthen institutions, and the individuals who will shape and lead them, by equipping and placing youth with data-driven, systems-focused skills for improving food systems."
+    },
+    "values": {
+      "heading_first": "Our",
+      "heading_second": "Values",
+      "evidence_title": "Evidence based",
+      "evidence_description": "In-depth research and data-driven insights shape the solutions we co-create, leveraging local knowledge and building analytical expertise to ensure the best possible outcomes.",
+      "integrity_title": "Integrity",
+      "integrity_description": "We work with authenticity and transparency. We are collaborative but not subject to influence or partiality.",
+      "stewardship_title": "Stewardship",
+      "stewardship_description": "We pattern the highest respect for human, financial, and natural resources and diligence in their utilization. The solutions we co-create enshrine this, alongside equality of access to resources now and for the future."
+    },
+    "building_solutions": {
+      "heading_1": "Building Sustainable",
+      "heading_2": "Solutions With",
+      "heading_3": "African Communities!"
+    },
+    "tags": {
+      "youth_empowerment": "Youth Empowerment",
+      "land_management": "Land Management",
+      "peer_learning": "Peer to peer learning",
+      "food_systems": "Food systems",
+      "stewardship": "Stewardship",
+      "system_thinking": "System Thinking",
+      "data_literacy": "Data Literacy",
+      "land_rights": "Land Rights",
+      "networking": "Networking",
+      "evidence_based": "Evidence-based",
+      "co_creation": "Co-creation",
+      "agriculture": "Agriculture",
+      "mentorship": "Mentorship"
+    },
+    "categories": {
+      "environment": "Environment",
+      "agriculture": "Agriculture",
+      "land": "Land",
+      "food_system": "Food system",
+      "climate": "Climate"
+    },
+    "approach": {
+      "heading_first": "Our",
+      "heading_second": "Approach",
+      "identify_title": "Identify",
+      "identify_text": "Identify leaders who are committed and passionate about the sustainable stewardship of land, agriculture, and the environment, and who can be trained and capacitated to provide expertise to public, and private sectors and communities.",
+      "establish_title": "Establish",
+      "establish_text": "Establish in-person digital training and incubation centres, enabling hands-on capacity enhancement programmes, professional development and networking designed to respond to specific challenges.",
+      "deploy_title": "Deploy",
+      "deploy_text": "Deploy trained young professionals to support the design and implementation of co-created, community-focused solutions for livelihood improvement."
+    },
+    "promise": {
+      "heading_first": "Our",
+      "heading_second": "Promise",
+      "partners_label": "Promise to partners",
+      "partners_items": [
+        "Create a pipeline of highly motivated GanzAfrica fellows with land, climate, and agricultural training, leadership skills, and analytical capabilities.",
+        "Enhance cross-generational linkages to help foster blended solutions combining novel and traditional ideas."
+      ],
+      "fellows_label": "Promise to fellows",
+      "fellows_items": [
+        "Provide up to 2 years of holistic training with a focus on data & analytics and leadership skills",
+        "Welcome fellows into a network of value-driven young Africans committed to leading Africa's transformation",
+        "Deliver work secondments with one of our partners to apply skills learned"
+      ]
+    }
+  },
+
+  "what_we_do": {
+    "title": "What We Do",
+    "food_systems": "Food Systems",
+    "climate_change_adaptation": "Climate Change Adaptation",
+    "description": "We focus on sustainable food systems and climate change adaptation to create lasting impact in Rwanda."
+  },
+  "programs": {
+    "flagship_heading_first": "Our Flagship",
+    "flagship_heading_second": "Programs",
+    "fellowship": {
+      "title": "Fellowship Program",
+      "description": "Our fellowship program provides young leaders with the skills and opportunities to drive sustainable change."
+    },
+    "alumni": {
+      "title": "Alumni Program",
+      "description": "Building a network of skilled professionals driving Africa's transformation in land, agriculture, and environment."
+    },
+    "policy_support": {
+      "title": "Policy Support Program",
+      "description": "We provide research and guidance to support sustainable policy development across Africa."
+    }
+  },
+  "projects": {
+    "heading_first": "Our",
+    "heading_second": "Projects",
+    "items": {
+      "food_systems": {
+        "title": "Food Systems",
+        "description": "Strengthening food security and sustainable agricultural practices across African communities."
+      },
+      "agriculture": {
+        "title": "Agriculture Farming",
+        "description": "Implementing innovative farming techniques and supporting local farmers for improved productivity."
+      },
+      "environmental": {
+        "title": "Environmental Sustainability",
+        "description": "Promoting conservation and sustainable resource management for future generations."
+      },
+      "climate": {
+        "title": "Climate Action",
+        "description": "Developing resilient solutions to address climate change challenges in African agriculture."
+      },
+      "land": {
+        "title": "Land Management",
+        "description": "Supporting sustainable land use practices and rights for community development."
+      }
+    }
+  },
+  "community": {
+    "title": "projects",
+    "mentors": "Mentors Profile",
+    "fellows": "Fellows Profile",
+    "join": "Join Our Community"
+  },
+  "stay_updated": {
+    "title": "Stay Updated",
+    "newsroom": "News & Updates",
+    "reports": "Annual Reports",
+    "events": "Events Calendar",
+    "subscribe": "Subscribe to Newsletter"
+  },
+  "footer": {
+    "about": "About",
+    "programs": "Programs",
+    "what_we_do": "What We Do",
+    "explore": "Explore",
+    "policies": "Policies",
+    "faqs": "FAQs",
+    "contact": "Contact",
+    "login": "Member Login",
+    "opportunities": "Opportunities",
+    "research": "Publications",
+    "copyright": "© 2025 GanzAfrica. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "title": "Sustainable Solutions for Rwanda's Future",
+      "subtitle": "Empowering youth through sustainable land management, agriculture, and environmental initiatives",
+      "title_after": {
+        "line1": "A PROSPEROUS AND",
+        "line2": "SUSTAINABLE",
+        "line3": "FUTURE FOR",
+        "line4": "AFRICA"
+      },
+      "cta": "Explore Our Programs"
+    },
+    "impact": {
+      "title": "Our Impact",
+      "fellows_trained": "Fellows Trained",
+      "projects_completed": "Projects Completed",
+      "communities_reached": "Communities Reached"
+    },
+    "fellow_section": {
+      "heading_first": "GanzAfrica",
+      "heading_second": "Empowering Youth to Transform Food Systems",
+      "description": "GanzAfrica empowers Africa's youth with the skills, knowledge, and opportunities to drive sustainable food systems transformation. Through training, mentorship, and work placements, we equip young leaders to tackle challenges in agriculture, environmental stewardship, and land management. Our holistic approach integrates data literacy, evidence-based decision-making, and leadership development, bridging the gap between education and employment. By fostering expertise and professional networks, GanzAfrica prepares youth to build resilient communities and contribute to a thriving Africa.",
+      "career_placement": "Career Placement & Impact",
+      "data_solutions": "Data-Driven Solutions",
+      "training": "Training & Mentorship",
+      "fellows_count": "75+",
+      "fellows_label": "Fellows",
+      "image_src": "/images/ganzafrica-fellows.jpg"
+    },
+    "why_section": {
+      "heading_first": "Why",
+      "heading_second": "GanzAfrica?",
+      "description": "There are many variations of passages of available but the majority have suffered alteration in some form by injected humor or random word which don't look even.",
+      "sticky_note_line1": "Agriculture",
+      "sticky_note_line2": "Professional",
+      "sticky_note_line3": "Leader",
+      "point1_title": "We train and inspire future leaders",
+      "point1_desc": "Create, connect, and develop a pool of committed and value-driven young Africans who can adapt new and emerging technologies in land, agriculture, and environment sub-sectors.",
+      "point2_title": "We drive continental collaboration",
+      "point2_desc": "Build a continental coalition of informed and empowered young experts who can innovate, co-create and scale solutions in land, agriculture, and environment sub-sectors.",
+      "point3_title": "We create intergenerational links",
+      "point3_desc": "Enhance cross-generational linkages between experienced and retired professionals and young practitioners, enhancing the co-creation of blended solutions combining novel and traditional ideals.",
+      "point4_title": "We promote innovative solutions",
+      "point4_desc": "Support the development of innovative, scalable solutions that address critical challenges in food systems, climate resilience, and sustainable agricultural practices across the continent."
+    }
+  },
+  "cta": {
+    "apply": "Apply Now",
+    "learn_more": "Learn More",
+    "contact_us": "Contact Us",
+    "get_involved": "Get Involved",
+    "discover_more": "Discover More",
+    "sign_in": "Sign In"
+  },
+  "auth": {
+    "sign_in": "Sign In",
+    "sign_up": "Sign Up",
+    "forgot_password": "Forgot Password?",
+    "login": "Login",
+    "register": "Register"
+  },
+  "food_system": {
+    "title": "Food System",
+    "subtitle": "Rooted in Excellence, Growing with Agriculture",
+    "section_title": "Why Food Systems Matter",
+    "description": "We strengthen the agriculture value chain by empowering farmers, improving sustainability, and shaping policy for a better future."
+  }
+}

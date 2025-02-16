@@ -1,0 +1,9 @@
+Required images for fellowship page:
+
+1. hands-grains.jpg - Image of hands holding grains
+2. team-photo.jpg - Team photo with diverse members
+3. person-city.jpg - Person in urban environment
+4. fellow1.jpg - Fellow portrait
+5. fellow2.jpg - Fellow portrait
+6. fellow3.jpg - Fellow portrait
+7. fellow4.jpg - Fellow portrait 

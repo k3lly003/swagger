@@ -1,0 +1,53 @@
+Required images for the fellowship page:
+
+1. hero-bg.jpg
+- Description: Dark overlay background image for the hero section
+- Size: 1920x400px recommended
+- Content: Agriculture/farming related background
+
+2. hands-seeds.jpg
+- Description: Hands holding seeds/grains
+- Size: 600x400px
+- Content: Close-up of hands holding seeds/grains
+
+3. team.jpg
+- Description: Team photo of fellows/professionals
+- Size: 600x400px
+- Content: Group photo in professional setting
+
+4. tackle-challenges.jpg
+- Description: Image representing problem-solving
+- Size: 300x200px
+- Content: People working on projects/challenges
+
+5. global-experience.jpg
+- Description: Image representing global connectivity
+- Size: 300x200px
+- Content: World map or international collaboration
+
+6. skills.jpg
+- Description: Image representing skill development
+- Size: 300x200px
+- Content: Training or learning environment
+
+7. avatar-1.jpg through avatar-5.jpg
+- Description: Profile photos of fellows
+- Size: 64x64px
+- Content: Professional headshots
+
+8. nla.jpg
+- Description: NLA logo
+- Size: 64x64px
+- Content: NLA organization logo
+
+9. claude.jpg
+- Description: Profile photo of Claude Mugabe
+- Size: 200x200px
+- Content: Professional headshot
+
+10. sarah.jpg
+- Description: Profile photo of Sarah Kimani
+- Size: 200x200px
+- Content: Professional headshot
+
+Note: All images should be optimized for web use (compressed without significant quality loss) and follow a consistent visual style. 

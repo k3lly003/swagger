@@ -1,0 +1,66 @@
+[33mcommit 513d9f53752236a1b1c2e93e562b5cc1ec6cc7ec[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/backend[m[33m)[m
+Merge: a011323 23f9fac
+Author: chrishema36 <chrishema36@gmail.com>
+Date:   Tue Apr 8 08:35:45 2025 +0200
+
+    Merge branch 'dev' of https://github.com/ganzafrica-org/ganzafrica into feature/backend
+
+[33mcommit a01132341500f522af94eb26db8d2cb0ac256c5b[m[33m ([m[1;32mdev[m[33m)[m
+Author: chrishema36 <chrishema36@gmail.com>
+Date:   Tue Apr 8 08:32:11 2025 +0200
+
+    updated gitignore
+
+[33mcommit 23f9facad540131e558970ca3b5144361343ae0b[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: Jeannine Uwase <79199207+uwasejeannine@users.noreply.github.com>
+Date:   Tue Apr 8 08:30:27 2025 +0200
+
+    I worked on Dashboard Layout and Projects (#22)
+    
+    * added few changes in project page
+    
+    * add the changes made on project, team, etc
+    
+    * added the dasbord page
+    
+    * added the dasbord page
+    
+    * worked on the dashbord layout and projects list
+    
+    * worked on signup and login
+    
+    ---------
+    
+    Co-authored-by: uwasejeannine <jeannineuwase@gmail.com>
+
+[33mcommit ea5b7faf0f3a9d63f0414310eeff01c16531ad1a[m
+Author: Baho Kemana Joselyto Charite <88556861+Josy-coder@users.noreply.github.com>
+Date:   Wed Apr 2 17:36:12 2025 +0200
+
+    Feature/homepage (#21)
+    
+    * [fix] updated hero on homepage
+    
+    * [fix] updated fellowssection on homepage
+    
+    * [fix] header, hero section homepage, etc...
+    
+    * [fix] switched with what makes ganzafrica unique
+    
+    * [fix] modified the food system page to match design
+    
+    * [fix] modified the climate adaptation page to match design
+
+[33mcommit 6c07dbd44464023ee39ae450b25e0b07da051f87[m
+Author: Jeannine Uwase <79199207+uwasejeannine@users.noreply.github.com>
+Date:   Wed Apr 2 08:47:47 2025 +0200
+
+    About (#20)
+    
+    * added few changes in project page
+    
+    * add the changes made on project, team, etc
+    
+    ---------
+    
+    Co-authored-by: uwasejeannine <jeannineuwase@gmail.com>
