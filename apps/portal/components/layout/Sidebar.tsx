@@ -23,6 +23,8 @@ import {
   Bell,
   CalendarDays,
   Megaphone,
+  UserCog,
+  Network,
 } from "lucide-react";
 
 interface SidebarProps {
@@ -174,56 +176,40 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
                     >
                       <FolderGit2 className="w-4 h-4 flex-shrink-0" />
                       <span className="ml-3 font-medium text-sm">
-                        Manage Roles
+                        Manage Users
                       </span>
                     </Link>
                     <Link
-                      href="/categories"
+                      href="/department"
                       className={`flex items-center pl-10 pr-4 py-2 rounded-lg transition-colors ${
-                        pathname === "/categories" ||
-                        pathname.startsWith("/categories/")
+                        pathname === "/department" ||
+                        pathname.startsWith("/department/")
                           ? "bg-white/10 text-white"
                           : "text-white/80 hover:bg-white/5 hover:text-white"
                       }`}
                     >
-                      <Tag className="w-4 h-4 flex-shrink-0" />
+                      <Network className="w-4 h-4 flex-shrink-0" />
                       <span className="ml-3 font-medium text-sm">
-                        Project Categories
+                        Departments
                       </span>
                     </Link>
                   </>
                 )}
               </div>
 
-              {/* Departments */}
+              {/* Tasks Dropdown */}
               <Link
-                href="/department"
+                href="/tasks"
                 className={`flex items-center ${isCollapsed ? "justify-center px-3" : "px-4"} py-2.5 rounded-lg transition-colors ${
-                  pathname === "/testimonials" ||
-                  pathname.startsWith("/testimonials/")
-                    ? "bg-white/10 text-white"
-                    : "text-white/80 hover:bg-white/5 hover:text-white"
-                }`}
-              >
-                <Briefcase className="w-5 h-5 flex-shrink-0" />
-                {!isCollapsed && (
-                  <span className="ml-3 font-medium">Department</span>
-                )}
-              </Link>
-
-              {/* Projects Dropdown */}
-              <Link
-                href="/projects"
-                className={`flex items-center ${isCollapsed ? "justify-center px-3" : "px-4"} py-2.5 rounded-lg transition-colors ${
-                  pathname === "/testimonials" ||
-                  pathname.startsWith("/testimonials/")
+                  pathname === "/tasks" ||
+                  pathname.startsWith("/tasks/")
                     ? "bg-white/10 text-white"
                     : "text-white/80 hover:bg-white/5 hover:text-white"
                 }`}
               >
                 <FolderGit2 className="w-5 h-5 flex-shrink-0" />
                 {!isCollapsed && (
-                  <span className="ml-3 font-medium">Projects</span>
+                  <span className="ml-3 font-medium">Tasks</span>
                 )}
               </Link>
 
