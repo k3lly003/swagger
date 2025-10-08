@@ -77,7 +77,7 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
 
   return (
     <div
-      className={`fixed left-0 top-0 h-full bg-[#045F3C] text-white/90 transition-all duration-300 ${
+      className={`fixed left-0 top-0 h-full bg-[#0a3549] text-white/90 transition-all duration-300 ${
         isCollapsed ? "w-20" : "w-64"
       }`}
     >
@@ -85,7 +85,7 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
         {/* Logo Section */}
         <div className="h-16 flex items-center px-6 border-b border-white/10">
           <div className="flex items-center">
-            {!isCollapsed ? (
+            {/* {!isCollapsed ? (
               <Image
                 src="/images/logoLight.png"
                 alt="GanzAfrica"
@@ -103,7 +103,8 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
                 className="object-contain"
                 priority
               />
-            )}
+            )} */}
+            <h1 className="text-3xl">IMS</h1>
           </div>
         </div>
 
@@ -137,10 +138,10 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
               <div>
                 <div
                   className={`flex items-center justify-between cursor-pointer ${isCollapsed ? "justify-center px-3" : "px-4"} py-2.5 rounded-lg transition-colors ${
-                    pathname === "/projects" ||
-                    pathname.startsWith("/projects/") ||
-                    pathname === "/categories" ||
-                    pathname.startsWith("/categories/")
+                    pathname === "/employee" ||
+                    pathname.startsWith("/employee/") ||
+                    pathname === "/employee" ||
+                    pathname.startsWith("/employee/")
                       ? "bg-white/10 text-white"
                       : "text-white/80 hover:bg-white/5 hover:text-white"
                   }`}
@@ -164,7 +165,7 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
                 {!isCollapsed && projectsOpen && (
                   <>
                     <Link
-                      href="/projects"
+                      href="/roles"
                       className={`flex items-center pl-10 pr-4 py-2 rounded-lg transition-colors ${
                         pathname === "/projects"
                           ? "bg-white/10 text-white"
@@ -195,96 +196,43 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
               </div>
 
               {/* Departments */}
-              <div className="relative">
-                <button
-                  onClick={toggleOpportunities}
-                  className={`flex items-center w-full ${isCollapsed ? "justify-center px-3" : "justify-between px-4"} py-2.5 rounded-lg transition-colors ${
-                    pathname === "/opportunities" ||
-                    pathname === "/applications" ||
-                    pathname.startsWith("/opportunities/") ||
-                    pathname.startsWith("/applications/")
-                      ? "bg-white/10 text-white"
-                      : "text-white/80 hover:bg-white/5 hover:text-white"
-                  }`}
-                >
-                  <div className="flex items-center">
-                    <Briefcase className="w-5 h-5 flex-shrink-0" />
-                    <span className="ml-3 font-medium">Departments</span>
-                  </div>
-                </button>
-
-                {/* Dropdown menu */}
-                {!isCollapsed && opportunitiesOpen && (
-                  <div className="pl-11 mt-1 space-y-1">
-                    <Link
-                      href="/opportunities"
-                      className={`flex items-center px-4 py-2 rounded-lg transition-colors ${
-                        pathname === "/opportunities"
-                          ? "bg-white/10 text-white"
-                          : "text-white/80 hover:bg-white/5 hover:text-white"
-                      }`}
-                    >
-                      <span className="font-medium">All Opportunities</span>
-                    </Link>
-                    <Link
-                      href="/applications"
-                      className={`flex items-center px-4 py-2 rounded-lg transition-colors ${
-                        pathname === "/applications" ||
-                        pathname.startsWith("/applications/")
-                          ? "bg-white/10 text-white"
-                          : "text-white/80 hover:bg-white/5 hover:text-white"
-                      }`}
-                    >
-                      <span className="font-medium">Applications</span>
-                    </Link>
-                  </div>
+              <Link
+                href="/department"
+                className={`flex items-center ${isCollapsed ? "justify-center px-3" : "px-4"} py-2.5 rounded-lg transition-colors ${
+                  pathname === "/testimonials" ||
+                  pathname.startsWith("/testimonials/")
+                    ? "bg-white/10 text-white"
+                    : "text-white/80 hover:bg-white/5 hover:text-white"
+                }`}
+              >
+                <Briefcase className="w-5 h-5 flex-shrink-0" />
+                {!isCollapsed && (
+                  <span className="ml-3 font-medium">Department</span>
                 )}
-
-                {/* Compact menu for collapsed sidebar */}
-                {isCollapsed && (
-                  <div className="absolute left-full ml-2 z-10 w-48 mt-1 bg-[#045F3C] rounded-lg shadow-lg transform -translate-x-1 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-150">
-                    <Link
-                      href="/opportunities"
-                      className="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-white rounded-t-lg"
-                    >
-                      All Opportunities
-                    </Link>
-                    <Link
-                      href="/applications"
-                      className="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-white rounded-b-lg"
-                    >
-                      Applications
-                    </Link>
-                  </div>
-                )}
-              </div>
+              </Link>
 
               {/* Projects Dropdown */}
-              <div>
-                <div
-                  className={`flex items-center justify-between cursor-pointer ${isCollapsed ? "justify-center px-3" : "px-4"} py-2.5 rounded-lg transition-colors ${
-                    pathname === "/users" ||
-                    pathname.startsWith("/users/") ||
-                    pathname === "/roles" ||
-                    pathname.startsWith("/roles/")
-                      ? "bg-white/10 text-white"
-                      : "text-white/80 hover:bg-white/5 hover:text-white"
-                  }`}
-                  onClick={() => !isCollapsed && setUsersOpen(!usersOpen)}
-                >
-                  <div className="flex items-center">
-                    <FolderGit2 className="w-5 h-5 flex-shrink-0" />
-                    <span className="ml-3 font-medium">Projects</span>
-                  </div>
-                </div>
-              </div>
+              <Link
+                href="/projects"
+                className={`flex items-center ${isCollapsed ? "justify-center px-3" : "px-4"} py-2.5 rounded-lg transition-colors ${
+                  pathname === "/testimonials" ||
+                  pathname.startsWith("/testimonials/")
+                    ? "bg-white/10 text-white"
+                    : "text-white/80 hover:bg-white/5 hover:text-white"
+                }`}
+              >
+                <FolderGit2 className="w-5 h-5 flex-shrink-0" />
+                {!isCollapsed && (
+                  <span className="ml-3 font-medium">Projects</span>
+                )}
+              </Link>
 
               {/* Recruitment with dropdown */}
               <div className="relative">
                 <button
                   onClick={toggleTeams}
                   className={`flex items-center w-full ${isCollapsed ? "justify-center px-3" : "justify-between px-4"} py-2.5 rounded-lg transition-colors ${
-                    pathname === "/teams" || pathname.startsWith("/teams/")
+                    pathname === "/recruitment" || pathname.startsWith("/recruitment/")
                       ? "bg-white/10 text-white"
                       : "text-white/80 hover:bg-white/5 hover:text-white"
                   }`}
@@ -307,9 +255,9 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
                 {!isCollapsed && teamsOpen && (
                   <div className="pl-11 mt-1 space-y-1">
                     <Link
-                      href="/teams"
+                      href="/manage-recruitment"
                       className={`flex items-center px-4 py-2 rounded-lg transition-colors ${
-                        pathname === "/teams/manage"
+                        pathname === "/manage-recruitment"
                           ? "bg-white/10 text-white"
                           : "text-white/80 hover:bg-white/5 hover:text-white"
                       }`}
@@ -317,9 +265,9 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
                       <span className="font-medium">Manage Recruitments</span>
                     </Link>
                     <Link
-                      href="/teams/team-types"
+                      href="/hiring"
                       className={`flex items-center px-4 py-2 rounded-lg transition-colors ${
-                        pathname === "/teams/types/add"
+                        pathname === "hiring/"
                           ? "bg-white/10 text-white"
                           : "text-white/80 hover:bg-white/5 hover:text-white"
                       }`}
@@ -335,7 +283,7 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
                 <button
                   onClick={toggleAssets}
                   className={`flex items-center w-full ${isCollapsed ? "justify-center px-3" : "justify-between px-4"} py-2.5 rounded-lg transition-colors ${
-                    pathname === "/teams" || pathname.startsWith("/teams/")
+                    pathname === "/assets" || pathname.startsWith("/assets/")
                       ? "bg-white/10 text-white"
                       : "text-white/80 hover:bg-white/5 hover:text-white"
                   }`}
@@ -358,7 +306,7 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
                 {!isCollapsed && assetsOpen && (
                   <div className="pl-11 mt-1 space-y-1">
                     <Link
-                      href="/teams"
+                      href="/inventory"
                       className={`flex items-center px-4 py-2 rounded-lg transition-colors ${
                         pathname === "/teams/manage"
                           ? "bg-white/10 text-white"
@@ -368,9 +316,9 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
                       <span className="font-medium">Inventory</span>
                     </Link>
                     <Link
-                      href="/teams/team-types"
+                      href="/documents"
                       className={`flex items-center px-4 py-2 rounded-lg transition-colors ${
-                        pathname === "/teams/types/add"
+                        pathname === "/documents"
                           ? "bg-white/10 text-white"
                           : "text-white/80 hover:bg-white/5 hover:text-white"
                       }`}
@@ -383,10 +331,10 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
 
               {/* Settings */}
               <Link
-                href="/testimonials"
+                href="/settings"
                 className={`flex items-center ${isCollapsed ? "justify-center px-3" : "px-4"} py-2.5 rounded-lg transition-colors ${
-                  pathname === "/testimonials" ||
-                  pathname.startsWith("/testimonials/")
+                  pathname === "/settings" ||
+                  pathname.startsWith("/settings/")
                     ? "bg-white/10 text-white"
                     : "text-white/80 hover:bg-white/5 hover:text-white"
                 }`}
@@ -399,10 +347,10 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
 
               {/* Notifications */}
               <Link
-                href="/testimonials"
+                href="/notifications"
                 className={`flex items-center ${isCollapsed ? "justify-center px-3" : "px-4"} py-2.5 rounded-lg transition-colors ${
-                  pathname === "/testimonials" ||
-                  pathname.startsWith("/testimonials/")
+                  pathname === "/notifications" ||
+                  pathname.startsWith("/notifications/")
                     ? "bg-white/10 text-white"
                     : "text-white/80 hover:bg-white/5 hover:text-white"
                 }`}
@@ -415,10 +363,10 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
 
               {/* Calendar */}
               <Link
-                href="/testimonials"
+                href="/calendar"
                 className={`flex items-center ${isCollapsed ? "justify-center px-3" : "px-4"} py-2.5 rounded-lg transition-colors ${
-                  pathname === "/testimonials" ||
-                  pathname.startsWith("/testimonials/")
+                  pathname === "/calendar" ||
+                  pathname.startsWith("/calendar/")
                     ? "bg-white/10 text-white"
                     : "text-white/80 hover:bg-white/5 hover:text-white"
                 }`}
@@ -431,10 +379,10 @@ const Sidebar = ({ isCollapsed }: SidebarProps) => {
 
               {/* Announcements */}
               <Link
-                href="/testimonials"
+                href="/announcements"
                 className={`flex items-center ${isCollapsed ? "justify-center px-3" : "px-4"} py-2.5 rounded-lg transition-colors ${
-                  pathname === "/testimonials" ||
-                  pathname.startsWith("/testimonials/")
+                  pathname === "/announcements" ||
+                  pathname.startsWith("/announcements/")
                     ? "bg-white/10 text-white"
                     : "text-white/80 hover:bg-white/5 hover:text-white"
                 }`}

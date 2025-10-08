@@ -7,6 +7,7 @@ import { useAuth } from '@/components/auth/auth-provider';
 import Link from 'next/link';
 import { Button } from '@workspace/ui/components/button';
 import { Checkbox } from '@workspace/ui/components/checkbox';
+import { jwtDecode } from 'jwt-decode';
 
 interface Notification {
   id: number;
@@ -55,16 +56,41 @@ const Navbar = ({ onMenuClick, isSidebarCollapsed }: NavbarProps) => {
 
   // Get auth context
   const { user, logout, isLoading } = useAuth();
+  
+  // Console log the logged-in user details and token for debugging
+  useEffect(() => {
+    console.log('Logged-in user details:', user);
+    
+    // Also check the raw token contents
+    const token = localStorage.getItem('accessToken');
+    if (token) {
+      try {
+        // Use the imported jwtDecode function instead of require
+        const decodedToken = jwtDecode(token);
+        console.log('Raw token payload:', decodedToken);
+      } catch (error) {
+        console.error('Error decoding token:', error);
+      }
+    } else {
+      console.log('No access token found in localStorage');
+    }
+  }, [user]);
 
   // Generate initials from the user's full name
   const getInitials = () => {
-    if (!user?.name) return 'GU';
+    if (!user?.name) {
+      // If no name is available, take first two letters of email or return default
+      if (user?.email) {
+        return user.email.substring(0, 2).toUpperCase();
+      }
+      return "US"; // "User" default
+    }
 
     // Split the name into parts and get the first letter of each part
     const nameParts = user.name.trim().split(/\s+/);
 
     if (nameParts.length === 1) {
-      // If single name, take first two letters or first letter twice
+      // If single name, take first two letters
       return (nameParts[0]?.substring(0, 2) ?? "").toUpperCase();
     }
 
@@ -75,8 +101,6 @@ const Navbar = ({ onMenuClick, isSidebarCollapsed }: NavbarProps) => {
   };
 
   const unreadCount = notifications.filter(n => !n.isRead).length;
-  // Round up to the nearest even number
-  const displayCount = unreadCount % 2 === 0 ? unreadCount : unreadCount + 1;
 
   const markAsRead = (id: number) => {
     setNotifications(prev =>
@@ -114,14 +138,26 @@ const Navbar = ({ onMenuClick, isSidebarCollapsed }: NavbarProps) => {
     };
   }, []);
 
-  // If still loading, return null or a loading placeholder
-  if (isLoading) {
-    return (
-        <div className="h-16 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between px-6 sticky top-0 z-50 shadow-sm">
-          <div>Loading...</div>
-        </div>
-    );
-  }
+  // Function to handle logout with our token-based authentication
+  const handleLogout = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    
+    try {
+      await logout();
+      // Redirect is handled in the auth context's logout function
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
+  };
+
+  // If still loading, return a loading placeholder
+  // if (isLoading) {
+  //   return (
+  //       <div className="h-16 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between px-6 sticky top-0 z-50 shadow-sm">
+  //         <div>Loading...</div>
+  //       </div>
+  //   );
+  // }
 
   return (
       <div className="h-16 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between px-6 sticky top-0 z-50 shadow-sm">
@@ -281,35 +317,31 @@ const Navbar = ({ onMenuClick, isSidebarCollapsed }: NavbarProps) => {
                       </div>
 
                       <div className="py-1">
-                        <a href="/profile" className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary-green hover:text-white group mx-2 rounded-lg transition-colors">
+                        <Link href="/profile" className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary-green hover:text-white group mx-2 rounded-lg transition-colors">
                           <User className="w-4 h-4 mr-3 text-gray-400 dark:text-gray-500 group-hover:text-white" />
                           Profile
-                        </a>
-                        <a href="/settings" className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary-green hover:text-white group mx-2 rounded-lg transition-colors">
+                        </Link>
+                        <Link href="/settings" className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary-green hover:text-white group mx-2 rounded-lg transition-colors">
                           <Settings className="w-4 h-4 mr-3 text-gray-400 dark:text-gray-500 group-hover:text-white" />
                           Settings
-                        </a>
+                        </Link>
                       </div>
 
                       <div className="py-1 border-t border-gray-100 dark:border-gray-700">
-                        <a href="/help" className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary-green hover:text-white group mx-2 rounded-lg transition-colors">
+                        <Link href="/help" className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary-green hover:text-white group mx-2 rounded-lg transition-colors">
                           <Info className="w-4 h-4 mr-3 text-gray-400 dark:text-gray-500 group-hover:text-white" />
                           Help Center
-                        </a>
+                        </Link>
                       </div>
 
                       <div className="py-1 border-t border-gray-100 dark:border-gray-700">
-                        <a
-                            href="#"
-                            onClick={(e) => {
-                              e.preventDefault();
-                              logout();
-                            }}
-                            className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary-green hover:text-white group mx-2 rounded-lg transition-colors"
+                        <button
+                            onClick={handleLogout}
+                            className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary-green hover:text-white group mx-2 rounded-lg transition-colors w-full text-left"
                         >
                           <LogOut className="w-4 h-4 mr-3 text-gray-400 dark:text-gray-500 group-hover:text-white" />
                           Logout
-                        </a>
+                        </button>
                       </div>
                     </div>
                 )}
